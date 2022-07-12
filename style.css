@@ -302,6 +302,7 @@ body{
 
 /* Aplica para la seccion de productos de tienda */
 .contenedorProductos{
+    margin-top: 3.5%;
     display:flex;
     justify-content: space-between ;
     
@@ -383,8 +384,14 @@ body{
     color: white;
 }
 
+.subcontenedorProductos *{
+    transition: 400ms;
+}
+.subcontenedorProductos:hover .imagenesProductos{
+    transform: translate(-16px,-42px) rotate(-16deg) scale(1.1);
+}
 
-/*---- Ver Mas boton---- */
+/*---- Ver Mas boton-------------------------- */
 .vermas{
     
     margin: 60px auto;
