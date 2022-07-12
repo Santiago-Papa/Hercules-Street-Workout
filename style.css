@@ -77,13 +77,8 @@ margin-left: 5%;
     
 }
 
-.navegacion ul li{
+.paginas{
     list-style-type: none;
-    height: 70px;
-    
-    margin-top: 35px;
-    
-    
 }
 
 .navegacion ul li a{
@@ -91,23 +86,27 @@ margin-left: 5%;
     color: #519749;
     font-family: 'Poppins', sans-serif;  
     font-size: 18px;
-    
-
-
-
 } 
 
 
 
-nav ul li:hover {
-    border-bottom: solid #519749;
-    border-bottom-width: 4px;
+.paginas::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #519749;
+    transition: width .5s;
+}
+
+.paginas:hover::after {
+    width: 100%;
+    
 }
 
 .paginaActual{
     border-bottom: solid #519749;
     border-bottom-width: 4px;
-
 } 
 
 
