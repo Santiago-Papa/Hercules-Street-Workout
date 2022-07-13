@@ -145,6 +145,14 @@ li{
     .logo{
         height: 55px;
     }
+
+    ul :first-child{
+        margin-left:0;
+    
+    }
+    li{
+        margin-right: 0;
+    }
 }
 
 
