@@ -459,7 +459,7 @@ body{
     .accordion{
         display: block;
     }
-}
+
 
 .accordion-header button{
     color: aliceblue;
@@ -519,7 +519,7 @@ font-family: 'Roboto', sans-serif;
 font-size: calc(1rem+0.6vh);
 }
 
-
+}
 /* ----------------Tienda--------------------------- */
 
 
