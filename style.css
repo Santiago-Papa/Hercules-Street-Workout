@@ -16,8 +16,11 @@ a{
 
  */
 
-
+ a{
+    text-decoration: none;
+}
 /* ------------------Header-------------------------------- */
+
 
 header{
     background-color: #0C0C0C;  
@@ -358,7 +361,6 @@ body{
 }
 
 .plan{
-
     width: 75%;
     margin-left: 3%;
     display: flex;
@@ -372,57 +374,41 @@ body{
     border: solid #1c7e11;
 }
 
-.tituloDescripPlanes{
-    
-    width: 40%;
 
+.primerSeccionPlan{
+    margin-left: 1%;
+    margin-top: 1%;
+    max-width: 60%;
 }
-
 .tituloDescripPlanes h3{
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    margin-top: 1%;
-    margin-left: 2%;
-    
+    font-size: calc(1.1rem + 0.6vh)
 }
 
 .tituloDescripPlanes p{
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-    margin-top: 3%;
-    margin-left: 2%;
-    
+    font-size: calc(1rem+0.6vh);
 }
 
-.eleccionMeses{
-    margin-left: 5%;
-    width: 10%;  
+.dropdown ul :first-child{
+    margin-left: 0%;
 }
 
-.eleccionMeses form{
-    display: flex;
-    flex-direction: column;
-    margin-top: 20%;
-    height: 80%;
-    justify-content: space-between;
-    
-
+.btn-secondary{
+    background-color:#1c7e11 ;
 }
 
-.precioPlanes{
-
-    height: fit-content;
-    margin: auto;
-    width: fit-content;
+.btn-secondary:hover{
+    background-color:#1c7e11 ;
 }
-
-.precioPlanes p{
+.dropdown{
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: calc(1rem+0.6vh);
 }
+
 
 .ultimaSeccionPlan{
     display: flex;
@@ -432,8 +418,6 @@ body{
     margin-right: 1%;
     margin-top: 1%;
     height: 20%;
-
-
 }
 
 .ultimaSeccionPlan .botonContratar{
@@ -442,28 +426,21 @@ body{
     padding-top: 2%;
     padding-bottom: 2%;
     width: 100%;
-
     display: flex;
     justify-content: center;
     border-radius: 5px;
     background-color: #1c7e11;
-
-    
 }
 
 .ultimaSeccionPlan .botonContratar:hover{
     background-color: #C3C3C1;
 }
 
-
 .ultimaSeccionPlan div a{
-
     color: #0C0C0C;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
+    font-size: calc(1rem+0.6vh);
     font-weight: 600;
-
-    
 }
 
 .ultimaSeccionPlan div img {
