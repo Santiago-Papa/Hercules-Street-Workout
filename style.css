@@ -188,7 +188,7 @@ body{
 
 /* ---Seccion 4-- */
 
-#carouselExampleCaptions{
+.carousel{
     display: none;
 }
 .seccion4Index{
@@ -285,7 +285,7 @@ body{
         display: none;
     }
 
-    #carouselExampleCaptions{
+    .carousel{
         display: block;
     }
 }
