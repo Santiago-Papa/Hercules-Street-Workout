@@ -160,14 +160,7 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: calc(1rem + 0.32vw);
 }
-
-
-
-
-/* --boton(Seccion 3) --*/
-
-
-
+/* --boton(Seccion 3) ----------*/
 .boton{
     margin: 8% auto;
     background-color: #519749;
@@ -176,7 +169,6 @@ body{
     border-radius: 1vh;
     padding: 1%;
 }
-
 .boton a{ 
     color: aliceblue;
     text-decoration: none;
@@ -192,7 +184,6 @@ body{
 }
 
 /* ---Seccion 4-- */
-
 
 #carouselExampleCaptions{
     display: none;
@@ -335,80 +326,24 @@ body{
 /* ----------------Gimnasio--------------------------- */
 
 
-.seccionGimnasio{
- display: grid;
- grid-template-columns: repeat(14, 1fr);
- grid-template-rows: repeat(11, 1fr);
-
-    
+.SeccionesGimnasio{
+    margin-top: 5%;
+}
+.SeccionesGimnasio div div img{
+ width: 100%;
 }
 
-.tituloInfoGimnasio{
-    grid-row: 7/14;
-    grid-column: 10/14;
- 
-    display: inline-block;
-}
-
-.tituloInfoGimnasio2{
-    grid-row: 1/6;
-    grid-column: 2/7;
-
-    display: inline-block;
-}
-
-
-.tituloInfoGimnasio h2{
+.SeccionesGimnasio div div h2{
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
-    font-size: 3.2vw;
-    margin-left: 2%;
+
 }
 
-.tituloInfoGimnasio2 h2{
+.SeccionesGimnasio div div p{
     color: aliceblue;
     font-family: 'Roboto', sans-serif;
-    font-size: 3.2vw;
-    margin-left: 2%;
+    font-size: calc(1rem + 0.32vw);
 }
-
-.infoGimnasio{
-    margin-top: 3%;
-    color: aliceblue;
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.6vw;
-    margin-left: 2%;
-}
-
-.infoGimnasio p{
-    margin-top: 2%;
-}
-
-
-.boxImagenGimnasio{
-    grid-row: 1/6;
-    grid-column:8/14 ;
-
-
-
-}
-
-.boxImagenGimnasio2{
-    grid-row: 7/14;
-    grid-column: 2/9;
-
-
-}
-
-.imagenesGimnasio{
-    width: 100%;
-
-
-
-}
-
-
-
 
 /* ----------------Planes--------------------------- */
 
