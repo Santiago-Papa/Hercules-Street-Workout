@@ -84,7 +84,7 @@ body{
 /*---------------------- Main ---------------------------------------------------------------------------*/
 .titulos{
     font-family: 'Poppins', sans-serif;
-    font-size: 4vw;
+    font-size: calc(4rem + 0.6vw);
     color: #0C0C0C;
     margin-left: 1%;
     text-shadow: -1px 0 #519749, 0 1px #519749, 1px 0 #519749, 0 -1px #519749; 
@@ -955,7 +955,7 @@ input[type =submit]:hover{
 
         grid-row: 9/11;
         
-    }
+    } 
 
 }
 

@@ -1,0 +1,187 @@
+body{
+    background-color: $color-cuaternario;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+}
+/* Header */
+header{
+    background-color: $color-secundario;
+}
+ul :first-child{
+    margin-left: 23%;
+
+}
+li{
+    margin-right: 10%;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: $color-primario;
+    font-family: $fuente-principal;
+    font-size: 2vh;  
+}
+.navbar-dark .navbar-nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 4px;
+    background: $color-primario;
+    transition: width .4s;
+}
+.navbar-dark .navbar-nav .nav-link:hover::after {
+    width: 135%;
+}
+.logo{
+    height: 100px;
+}
+@media(max-width: 992px){
+    .logo{
+        height: 55px;
+    }
+
+    ul :first-child{
+        margin-left:0;
+    
+    }
+    li{
+        margin-right: 0;
+    }
+}
+
+/* Titulos */
+.titulos{
+    font-family: $fuente-principal;
+    font-size: $tamaño-titulospaginas;
+    color: $color-secundario;
+    margin-left: 1%;
+    text-shadow: -1px 0 $color-primario, 0 1px $color-primario, 1px 0 $color-primario, 0 -1px $color-primario; 
+}
+
+/* Footer */
+footer{
+    background-color: $color-secundario;
+    .pie{
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+        margin: auto;
+        .contactFooter{
+            display: block;
+            width: fit-content;
+            h2{
+                color: $color-textos;
+                font-family: $fuente-principal;
+                font-size: $tamaño-parrafos;
+                margin-bottom: 10px;
+            }
+            .contactIcon{
+                margin-bottom: 15px;
+                display:flex;
+                width: fit-content;
+                margin-left: 20px;
+                a{
+                    color: $color-textos;
+                    font-family: $fuente-principal;
+                    font-size: $tamaño-fuentescontacto;
+                    margin-top: 6px;
+                    margin-left: 10px; 
+                    &:hover{
+                        color: $color-primario;  
+                    } 
+                }
+                p{
+                    color: $color-textos;
+                    font-family: $fuente-principal;
+                    font-size: $tamaño-fuentescontacto;
+                    margin-top: 6px;
+                    margin-left: 10px;  
+                }
+                .icon{
+                    height: 35px;
+                    border-radius: 10px;
+                }
+            }
+
+
+
+        } 
+        
+        .volverArriba{
+            margin: auto ;
+        }
+
+        .newsletter{
+
+            width: 25%;
+            h2{
+                color: $color-textos;
+                font-family: $fuente-principal;
+                font-size: $tamaño-parrafos;
+                margin-top: 30px; 
+            }
+            p{
+                color: $color-textos;
+                font-family: $fuente-principal;
+                margin-top: 30px; 
+                font-size: $tamaño-fuentescontacto;
+            }
+            form{
+                font-family: $fuente-principal;
+                margin-top: 40px;
+                div{
+                    margin-top: 10px;
+                    &:hover{
+                        #lemailFooter{
+                            transform:
+                            translate(0, -30px) scale(.8);
+                        }
+                    }
+                    label{
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        transform: translate(10px, 10px);
+                        transform-origin:left;
+                        transition: transform .25s;
+                        color: $color-textos;
+                    }
+                    input{
+                        padding: 10px;
+                        border: none;
+                        border-radius: 4px;
+                        font: inherit;
+                        background-color: transparent;
+                        outline: 2px solid $color-textos;
+                    }
+                }
+            }
+            .emailFooter{
+                position: relative;
+            }
+            input[type =submit]{
+                background-color:transparent;
+                border: solid aliceblue;
+                color: white;
+                padding: 10px;
+                text-decoration: none;
+                border-radius: 4px;
+                cursor: pointer;
+                &:hover{
+                    background-color:white;
+                    color: #0C0C0C; 
+                }
+            }
+
+        }
+    }
+
+    @media screen and(max-width: 992px){
+        .pie{
+            flex-direction: column;
+        }
+    }
+}
+
+
+
