@@ -96,8 +96,8 @@ body{
 
 
 .seccion1Index{
-    width: 100%;
-    height: 30%;
+    width: 100vw;
+    height: 70vh;
     text-align: center;
 
     background-image: url("./imagenes-generales/imagenes-inicio/portada.jpg");
@@ -107,9 +107,25 @@ body{
 
 } 
 
- 
+.tituloIndex h1{   
+    font-family: 'Poppins', sans-serif;
+    font-size: 4vw;
+    color: #0C0C0C;
+    text-shadow: -1px 0 #519749, 0 1px #519749, 1px 0 #519749, 0 -1px #519749; 
+    
+}
 
-.tituloIndex{
+.eslogan{
+    margin-top: 60vh;
+}
+.eslogan p{
+    font-family: 'Roboto', sans-serif;
+    color: aliceblue;
+    font-style: italic;
+    font-size: 4vw;
+}
+
+/* .tituloIndex{
 
 
  width: fit-content;
@@ -129,7 +145,7 @@ body{
 
 
 .eslogan {
-    margin-left:60%;
+    margin-right: 2%;
     margin-top: 54%;
     width: fit-content;
     height: fit-content;
@@ -141,7 +157,7 @@ body{
     color: aliceblue;
     font-style: italic;
     font-size: 4vw;
-}
+} */
 
 /*-- Seccion 2-- */
 
@@ -391,9 +407,7 @@ body{
 }
 
 .tituloDescripPlanes p{
-    color: aliceblue;
-    font-family: 'Roboto', sans-serif;
-    font-size: calc(1rem+0.6vh);
+
 }
 
 .dropdown ul :first-child{
@@ -553,7 +567,7 @@ font-size: calc(1rem+0.6vh);
 
 /* ----------------Contacto--------------------------- */
 
-.seccion1Contacto{
+/* .seccion1Contacto{
 
  
     width: 70%;
@@ -562,7 +576,7 @@ font-size: calc(1rem+0.6vh);
     margin-left: 15%;
     justify-content: space-around;
 
-}
+} */
 
 .iconPagContacto{
     height: 35px;
@@ -570,19 +584,29 @@ font-size: calc(1rem+0.6vh);
     border-radius: 10px;
     
 }
+.seccion1Contacto{
+    margin-top: 2%;
+}
+.seccion1Contacto .row{
+    justify-content: space-around;
 
-
-
-
-
+}
 .paginaContacto{
+    width: fit-content;
+}
+.formContacto{
+    width: fit-content;
+}
+
+
+/* .paginaContacto{
 
     display: block;
     width: fit-content;
     display: inline-block;
 
 
-}
+} */
 
 .boxContactIcon{
     margin-bottom: 15px;
@@ -621,11 +645,11 @@ font-size: calc(1rem+0.6vh);
     color: #519749;
 }
 
-.formContacto{
+/* .formContacto{
 
     display: inline-block;
     width: fit-content;
-}
+} */
 
 .nombreContacto{
     display: inline-block;
@@ -674,7 +698,7 @@ font-size: calc(1rem+0.6vh);
 
 
 
-.seccion2Contacto{
+/* .seccion2Contacto{
     display: flex;
     justify-content: space-between;
     margin-top: 3%;
@@ -682,7 +706,14 @@ font-size: calc(1rem+0.6vh);
  
     margin-left: 5%;
 }
+ */
 
+ .seccion2Contacto{
+    margin-top: 2%;
+ }
+.seccion2Contacto .row{
+    justify-content: space-around;
+}
 .map{
 
     width: fit-content;
@@ -904,7 +935,7 @@ input[type =submit]:hover{
 
 /* --------Queries---------- */
 
-@media (min-width: 1500px) {
+/* @media (min-width: 1500px) {
     .eslogan {
 
         margin-top: 30%;
@@ -913,7 +944,7 @@ input[type =submit]:hover{
         height: fit-content;
     
       }
-}
+} */
 
 
 

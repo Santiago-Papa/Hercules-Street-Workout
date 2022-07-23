@@ -1,0 +1,14 @@
+@mixin mediaQuery($pantalla){
+    
+    @if $pantalla == 'large'{
+        @media screen and (max-width: 992px){
+            @content
+        }
+    };
+    @if $pantalla == 'xlarge'{
+        @media screen and (max-width: 1200px){
+            @content
+        }
+    };
+
+};

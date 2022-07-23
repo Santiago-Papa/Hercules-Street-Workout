@@ -1,7 +1,7 @@
 @charset "UTF-8";
 body {
   background-color: #1c1c1c;
-  min-height: 100vh; }
+  overflow-x: hidden; }
 
 a {
   text-decoration: none; }
@@ -35,13 +35,16 @@ li {
 .logo {
   height: 100px; }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .logo {
     height: 55px; }
   ul :first-child {
     margin-left: 0; }
   li {
     margin-right: 0; } }
+
+main {
+  min-height: 100vh; }
 
 /* Titulos */
 .titulos {
@@ -142,6 +145,56 @@ footer {
     footer .pie {
       flex-direction: column; } }
 
+/* Index */
+.seccion1Index {
+  width: 100vw;
+  height: 70vh;
+  text-align: center;
+  background-image: url("../imagenes-generales/imagenes-inicio/portada.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center; }
+  .seccion1Index div .tituloIndex h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: calc(4rem + 0.6vw);
+    color: #0C0C0C;
+    text-shadow: -1px 0 #519749, 0 1px #519749, 1px 0 #519749, 0 -1px #519749; }
+  .seccion1Index div .eslogan {
+    margin-top: 60vh;
+    font-family: "Roboto", sans-serif;
+    color: aliceblue;
+    font-style: italic;
+    font-size: calc(4rem + 0.6vw); }
+
+.S2Index {
+  margin-top: 5%; }
+  .S2Index div div h2 {
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-size: calc(1.325rem + .9vw); }
+  .S2Index div div p {
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-size: calc(1rem + 0.32vw); }
+  .S2Index div .imagenS2Index img {
+    width: 100%; }
+
+.seccion4Index {
+  margin-top: 2%; }
+  .seccion4Index .tituloProductosIndex {
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-size: calc(1.325rem + .9vw);
+    text-align: center; }
+
+@media screen and (max-width: 992px) {
+  .seccion1Index {
+    height: 55vh;
+    text-align: center;
+    background-image: url("../imagenes-generales/imagenes-inicio/portada-movil.jpg"); }
+    .seccion1Index div .eslogan {
+      margin-top: 36vh; } }
+
 /* Gimnasio */
 .SeccionesGimnasio {
   margin-top: 5%; }
@@ -149,7 +202,8 @@ footer {
     width: 100%; }
   .SeccionesGimnasio div div h2 {
     color: aliceblue;
-    font-family: "Roboto", sans-serif; }
+    font-family: "Roboto", sans-serif;
+    font-size: calc(1.325rem + .9vw); }
   .SeccionesGimnasio div div p {
     color: aliceblue;
     font-family: "Roboto", sans-serif;
@@ -196,6 +250,131 @@ footer {
     font-weight: 500;
     font-size: calc(1rem + 0.32vw); }
 
+/* planes */
+.accordion {
+  display: none; }
+
+.pases {
+  margin-top: 3%;
+  margin-bottom: 3%; }
+  .pases h2 {
+    color: #519749;
+    font-family: "Roboto", sans-serif;
+    font-size: calc(1.325rem + .9vw);
+    margin-left: 3%; }
+  .pases .plan {
+    width: 75%;
+    margin-left: 3%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    background-color: #363636;
+    margin-top: 1%; }
+    .pases .plan:hover {
+      border: solid #519749; }
+    .pases .plan .primerSeccionPlan {
+      margin-left: 1%;
+      margin-top: 1%;
+      max-width: 60%; }
+      .pases .plan .primerSeccionPlan .tituloDescripPlanes h3 {
+        color: aliceblue;
+        font-family: "Roboto", sans-serif;
+        font-size: calc(1rem + 0.32vw); }
+      .pases .plan .primerSeccionPlan .tituloDescripPlanes p {
+        color: aliceblue;
+        font-family: "Roboto", sans-serif;
+        font-size: calc(1rem + 0.32vw); }
+    .pases .plan .ultimaSeccionPlan {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 28%;
+      margin-right: 1%;
+      margin-top: 1%;
+      height: 20%; }
+      .pases .plan .ultimaSeccionPlan div img {
+        width: 100%; }
+      .pases .plan .ultimaSeccionPlan div a {
+        color: #0C0C0C;
+        font-family: "Roboto", sans-serif;
+        font-size: calc(1rem + 0.32vw);
+        font-weight: 600; }
+      .pases .plan .ultimaSeccionPlan .botonContratar {
+        margin-top: 3%;
+        margin-bottom: 3%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        background-color: #519749; }
+        .pases .plan .ultimaSeccionPlan .botonContratar:hover {
+          background-color: #C3C3C1; }
+
+@media screen and (max-width: 1200px) {
+  .pases .plan {
+    display: none; }
+  .accordion {
+    display: block; } }
+
+.dropdown {
+  color: aliceblue;
+  font-family: "Roboto", sans-serif;
+  font-size: calc(1rem + 0.32vw); }
+  .dropdown ul :first-child {
+    margin-left: 0%; }
+  .dropdown .btn-secondary:hover {
+    background-color: #519749; }
+
+/* planes Movile */
+.accordion-header button {
+  color: aliceblue;
+  font-family: "Roboto", sans-serif;
+  font-size: calc(1rem + 0.32vw); }
+
+.accordion-item {
+  background-color: #1c1c1c;
+  border: solid #0C0C0C; }
+
+.accordion-button {
+  background-color: #363636; }
+  .accordion-button:not(.collapsed) {
+    color: aliceblue;
+    background-color: #519749; }
+
+.collapse:not(.show) .accordion-button {
+  background-color: #363636; }
+
+.tituloDescripPlanesMovile h3 {
+  color: #519749;
+  font-family: "Roboto", sans-serif;
+  font-size: calc(1.325rem + .9vw); }
+
+.tituloDescripPlanesMovile p {
+  color: aliceblue;
+  font-family: "Roboto", sans-serif;
+  font-size: calc(1rem + 0.32vw); }
+
+.mesesContratarMovile .botonContratar {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #519749; }
+  .mesesContratarMovile .botonContratar a {
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-size: calc(1rem + 0.32vw); }
+  .mesesContratarMovile .botonContratar:hover {
+    background-color: #C3C3C1; }
+
+.imagenPlanesMovile img {
+  width: 100%; }
+
 /* Tienda */
 .seccionesTienda {
   width: 95%;
@@ -208,6 +387,87 @@ footer {
     font-size: calc(1.325rem + .9vw);
     margin-top: 5%;
     margin-bottom: 2%; }
+
+.seccion1Contacto {
+  margin-top: 2%; }
+  .seccion1Contacto .row {
+    justify-content: space-around; }
+    .seccion1Contacto .row .paginaContacto {
+      width: fit-content; }
+      .seccion1Contacto .row .paginaContacto .boxContactIcon {
+        margin-bottom: 15px;
+        display: flex;
+        width: fit-content;
+        margin-left: 20px; }
+        .seccion1Contacto .row .paginaContacto .boxContactIcon a {
+          color: aliceblue;
+          font-family: "Poppins", sans-serif;
+          font-size: calc(1rem+0.2vw);
+          margin-top: 6px;
+          margin-left: 10px; }
+          .seccion1Contacto .row .paginaContacto .boxContactIcon a:hover {
+            color: #519749; }
+        .seccion1Contacto .row .paginaContacto .boxContactIcon p {
+          color: aliceblue;
+          font-family: "Poppins", sans-serif;
+          font-size: calc(1rem+0.2vw);
+          margin-top: 6px;
+          margin-left: 10px; }
+        .seccion1Contacto .row .paginaContacto .boxContactIcon img {
+          height: 35px;
+          border-radius: 10px; }
+    .seccion1Contacto .row .formContacto .nombreContacto {
+      display: inline-block; }
+      .seccion1Contacto .row .formContacto .nombreContacto input {
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        font: inherit;
+        background-color: transparent;
+        outline: 2px solid aliceblue; }
+    .seccion1Contacto .row .formContacto .emailContacto {
+      display: inline-block; }
+      .seccion1Contacto .row .formContacto .emailContacto input {
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        font: inherit;
+        background-color: transparent;
+        outline: 2px solid aliceblue; }
+    .seccion1Contacto .row .formContacto .mensajeContacto {
+      margin-top: 3%; }
+      .seccion1Contacto .row .formContacto .mensajeContacto textarea {
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        font: inherit;
+        background-color: transparent;
+        outline: 2px solid aliceblue; }
+    .seccion1Contacto .row .formContacto input[type=submit] {
+      background-color: transparent;
+      border: solid aliceblue;
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 4px;
+      cursor: pointer; }
+      .seccion1Contacto .row .formContacto input[type=submit]:hover {
+        background-color: white;
+        color: #0C0C0C; }
+
+.seccion2Contacto {
+  margin-top: 2%;
+  margin-bottom: 2%; }
+  .seccion2Contacto .row {
+    justify-content: space-around; }
+    .seccion2Contacto .row .map {
+      width: fit-content;
+      height: 100%; }
+    .seccion2Contacto .row .imagenContacto {
+      width: 45%; }
+      .seccion2Contacto .row .imagenContacto img {
+        width: 100%;
+        height: 100%; }
 
 /* Contenedores Productos */
 .carousel {

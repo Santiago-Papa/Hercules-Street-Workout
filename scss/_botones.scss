@@ -18,7 +18,7 @@
         color: $color-textos;
         text-decoration: none;
         font-weight: 500;
-        font-size:$tamaño-titulospaginas; 
+        font-size:map-get($tamaños, "tamaño-titulospaginas"); 
         font-family: $fuente-principal; 
 
     }
@@ -46,6 +46,6 @@
         font-family: $fuente-principal;
         text-decoration: none;
         font-weight: 500;
-        font-size:$tamaño-parrafos;  
+        font-size:map-get($tamaños, "tamaño-parrafos");  
     }
 }

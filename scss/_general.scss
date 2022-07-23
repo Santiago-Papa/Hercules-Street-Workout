@@ -1,6 +1,7 @@
+@import './base/mixins';
 body{
     background-color: $color-cuaternario;
-    min-height: 100vh;
+    overflow-x: hidden;
 }
 a{
     text-decoration: none;
@@ -8,7 +9,10 @@ a{
 /* Header */
 header{
     background-color: $color-secundario;
+    
 }
+
+
 ul :first-child{
     margin-left: 23%;
 
@@ -35,7 +39,7 @@ li{
 .logo{
     height: 100px;
 }
-@media(max-width: 992px){
+@include mediaQuery('large'){
     .logo{
         height: 55px;
     }
@@ -49,10 +53,14 @@ li{
     }
 }
 
+main{
+    min-height: 100vh;
+}
+
 /* Titulos */
 .titulos{
     font-family: $fuente-principal;
-    font-size: $tamaño-titulospaginas;
+    font-size: map-get($tamaños, "tamaño-titulospaginas");
     color: $color-secundario;
     margin-left: 1%;
     text-shadow: -1px 0 $color-primario, 0 1px $color-primario, 1px 0 $color-primario, 0 -1px $color-primario; 
@@ -72,7 +80,7 @@ footer{
             h2{
                 color: $color-textos;
                 font-family: $fuente-principal;
-                font-size: $tamaño-parrafos;
+                font-size: map-get($tamaños, "tamaño-parrafos");
                 margin-bottom: 10px;
             }
             .contactIcon{
@@ -83,7 +91,7 @@ footer{
                 a{
                     color: $color-textos;
                     font-family: $fuente-principal;
-                    font-size: $tamaño-fuentescontacto;
+                    font-size: map-get($tamaños, "tamaño-fuentescontacto");
                     margin-top: 6px;
                     margin-left: 10px; 
                     &:hover{
@@ -93,7 +101,7 @@ footer{
                 p{
                     color: $color-textos;
                     font-family: $fuente-principal;
-                    font-size: $tamaño-fuentescontacto;
+                    font-size: map-get($tamaños, "tamaño-fuentescontacto");
                     margin-top: 6px;
                     margin-left: 10px;  
                 }
@@ -117,14 +125,14 @@ footer{
             h2{
                 color: $color-textos;
                 font-family: $fuente-principal;
-                font-size: $tamaño-parrafos;
+                font-size: map-get($tamaños, "tamaño-parrafos");
                 margin-top: 30px; 
             }
             p{
                 color: $color-textos;
                 font-family: $fuente-principal;
                 margin-top: 30px; 
-                font-size: $tamaño-fuentescontacto;
+                font-size: map-get($tamaños, "tamaño-fuentescontacto");
             }
             form{
                 font-family: $fuente-principal;
@@ -176,7 +184,7 @@ footer{
         }
     }
 
-    @media screen and(max-width: 992px){
+    @include mediaQuery('large'){
         .pie{
             flex-direction: column;
         }

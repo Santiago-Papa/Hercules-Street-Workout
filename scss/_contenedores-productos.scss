@@ -1,4 +1,5 @@
 /* Contenedores Productos */
+@import './base/mixins';
 .carousel{
     display: none;
 }
@@ -38,7 +39,7 @@
             color: $color-textos;
             text-align: center;
             font-family: $fuente-principal;
-            font-size: $tamaño-parrafos;  
+            font-size: map-get($tamaños, "tamaño-parrafos");  
         }
         .carritoComprar{
             width: 90%;
@@ -49,7 +50,7 @@
             a{
                 color: $color-primario;
                 font-family: $fuente-principal;
-                font-size: $tamaño-parrafos;
+                font-size: map-get($tamaños, "tamaño-parrafos");
                 &:hover{
                     color: $color-textos;
                 }
@@ -60,7 +61,7 @@
 
 }
 
-@media screen and (max-width:1200px){
+@include mediaQuery('xlarge'){
     .contenedorProductos{
         display: none;
     }
