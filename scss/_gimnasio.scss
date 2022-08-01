@@ -1,0 +1,25 @@
+/* Gimnasio */
+.SeccionesGimnasio{
+    margin-top: 5%;
+    div{
+        div{
+            img{
+                width: 100%;
+            }
+            h2{
+                color: $color-textos;
+                font-family: $fuente-secundaria;
+                font-size:map-get($tamaños, "tamaño-titulos");
+            }
+            p{
+                color: $color-textos;
+                font-family: $fuente-secundaria;
+                font-size: map-get($tamaños, "tamaño-parrafos"); 
+            }
+        }
+    }
+}
+
+
+
+

@@ -1,0 +1,73 @@
+/* Contenedores Productos */
+@import './base/mixins';
+.carousel{
+    display: none;
+}
+
+
+.contenedorProductos{
+    margin-top: 3.5%;
+    display:flex;
+    justify-content: space-between ;
+    flex-wrap: wrap;
+    width: 95%;
+    margin-top: 2%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    .subcontenedorProductos{
+        margin-top: 3%;
+        width: 16%;
+        margin: 0 20px;
+        *{
+            transition: 400ms;
+        }
+        &:hover{
+            .imagenesProductos{
+                transform: translate(-16px,-42px) rotate(-16deg) scale(1.1);
+            }
+        }
+        .fondoProductos{
+            background-color: #fff;
+            height: 50%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+        p{
+            color: $color-textos;
+            text-align: center;
+            font-family: $fuente-principal;
+            font-size: map-get($tamaños, "tamaño-parrafos");  
+        }
+        .carritoComprar{
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 20px;
+            display:flex;
+            justify-content: space-between;
+            a{
+                color: $color-primario;
+                font-family: $fuente-principal;
+                font-size: map-get($tamaños, "tamaño-parrafos");
+                &:hover{
+                    color: $color-textos;
+                }
+            }
+        }
+
+    }
+
+}
+
+@include mediaQuery('xlarge'){
+    .contenedorProductos{
+        display: none;
+    }
+
+    .carousel{
+        display: block;
+    }
+}
+

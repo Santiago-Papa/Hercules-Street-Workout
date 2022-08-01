@@ -1,0 +1,104 @@
+.seccion1Contacto{
+    margin-top: 2%;
+    .row{
+        justify-content: space-around;
+        .paginaContacto{
+            width: fit-content;
+            .boxContactIcon{
+                margin-bottom: 15px;
+                display:flex;
+                width: fit-content;
+                margin-left: 20px;
+                a{
+                    color:$color-textos;
+                    font-family: $fuente-principal;
+                    font-size: map-get($tamaños , "tamaño-fuentescontacto" );
+                    margin-top: 6px;
+                    margin-left: 10px;
+                    &:hover{
+                        color: $color-primario;
+                    }
+                }
+                p{
+                    color:$color-textos;
+                    font-family: $fuente-principal;
+                    font-size: map-get($tamaños , "tamaño-fuentescontacto" );
+                    margin-top: 6px;
+                    margin-left: 10px;  
+                }
+                img{
+                    height: 35px;
+                    border-radius: 10px;
+                    }
+            }
+        }
+        .formContacto{
+            .nombreContacto{
+                display: inline-block;
+                input{
+                    padding: 10px;
+                    border: none;
+                    border-radius: 4px;
+                    font: inherit;
+                    background-color: transparent;
+                    outline: 2px solid $color-textos;
+                }
+            }
+            .emailContacto{
+                display: inline-block;
+                input{
+                    padding: 10px;
+                    border: none;
+                    border-radius: 4px;
+                    font: inherit;
+                    background-color: transparent;
+                    outline: 2px solid $color-textos;
+                }
+            }
+            .mensajeContacto{
+                margin-top: 3%;
+                textarea{
+                    padding: 10px;
+                    border: none;
+                    border-radius: 4px;
+                    font: inherit;
+                    background-color: transparent;
+                    outline: 2px solid $color-textos;
+                }
+            }
+            input[type =submit]{
+                background-color:transparent;
+                border: solid aliceblue;
+                color: white;
+                padding: 10px;
+                text-decoration: none;
+                border-radius: 4px;
+                cursor: pointer;
+                &:hover{
+                    background-color:white;
+                    color: #0C0C0C; 
+                }
+            }
+
+        }
+    }
+}
+
+.seccion2Contacto{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    .row{
+        justify-content: space-around;
+        .map{
+            width: fit-content;
+            height: 100%;
+        }
+        .imagenContacto{
+            width: 45%;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,72 @@
+/* planes Movile */
+.accordion{
+
+    &-header{
+        button{
+            color: $color-textos;
+            font-family: $fuente-secundaria;
+            font-size: map-get($tamaños, "tamaño-parrafos");
+        }
+    }
+    &-item{
+        background-color: $color-cuaternario;
+        border: solid  $color-secundario;
+    }
+    &-button{
+         background-color: $color-pases; 
+        &:not(.collapsed){
+            color: $color-textos;
+            background-color: $color-primario;
+        }
+
+    }
+}
+.collapse:not(.show){
+    .accordion-button{
+        background-color: $color-pases;
+    }
+}
+.tituloDescripPlanesMovile{
+    h3{
+        color: $color-primario;
+        font-family: $fuente-secundaria;
+        font-size:map-get($tamaños, "tamaño-titulos");
+    }
+    p{
+        color: $color-textos;
+        font-family: $fuente-secundaria;
+        font-size: map-get($tamaños, "tamaño-parrafos"); 
+    }
+
+}
+
+.mesesContratarMovile{
+    .botonContratar{
+        margin-top: 3%;
+        margin-bottom: 3%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        display: flex;
+        justify-content: center;
+        border-radius: 5px;
+        background-color: $color-primario;
+        a{
+            color: $color-textos;
+            font-family: $fuente-secundaria;
+            font-size: map-get($tamaños, "tamaño-parrafos"); 
+        }
+        &:hover{
+            background-color: $color-fondobotones;
+        }
+    }
+
+
+}
+
+.imagenPlanesMovile{
+    img{
+        width: 100%;
+    }
+}
+
+

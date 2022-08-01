@@ -1,0 +1,14 @@
+/* Tienda */
+.seccionesTienda{
+    width: 95%;
+    margin-top: 2%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    h2{
+        color: $color-textos;
+        font-family: $fuente-secundaria;
+        font-size: map-get($tamaños, "tamaño-titulos");;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+    }

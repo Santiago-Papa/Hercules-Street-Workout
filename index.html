@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HSW</title>
+  <meta name="keywords" content= "gimnasio, entrenamiento, rutina, calistenia, street , workout, suplementos, motivacion, musculo, musculos, calisthenics, front lever, back lever, handstand, plancha, planche, straddle">
+  <meta name="description" content="Gimnasio de Calistenia/StreetWorkout indoor para todos los niveles. Asesoramientos y la mejor infraestructura para llevar tus cuerpo al extremo y encontrarte con tu mejor version">
+  <title>HSW|Inicio</title>
   <link rel="icon" type="image/png" href="imagenes-generales/icon.png">
   <!-- Nav Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,11 +24,11 @@
   <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- Css -->
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body id="top">
-  <header class="encabezado">
+  <header class="encabezado sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
         <div class="logo">
@@ -44,16 +46,16 @@
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./paginas/gimnasio.html">Gimnasio</a>
+              <a class="nav-link" href="./informacion/gimnasio.html">Gimnasio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./paginas/planes.html">Planes</a>
+              <a class="nav-link" href="./informacion/planes.html">Planes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./paginas/tienda.html">Tienda</a>
+              <a class="nav-link" href="./informacion/tienda.html">Tienda</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./paginas/contacto.html">Contacto</a>
+              <a class="nav-link" href="./informacion/contacto.html">Contacto</a>
             </li>
           </ul>
 
@@ -65,17 +67,21 @@
   <main>
 
 
-    <section class="seccion1Index">
-
-        <div class="tituloIndex">
+    <section class="seccion1Index container-fluid">
+      <div class="row">
+        <div class="tituloIndex col-sm-12 col-lg-6">
           <h1>Hercules Street Workout</h1>
         </div>
+
+        <div class="eslogan col-sm-12 col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+          <p>"Rompé tus limites"</p>
+        </div>
+      </div>
 
         <div class="eslogan" data-aos="fade-left" data-aos-duration="1000">
           <p>"Rompé tus limites"</p>
         </div>
  
-
 
     </section>
 
@@ -225,66 +231,67 @@
   </main>
 
   <footer>
-    <section class="pie container">
-      <div class="row">
-        <div class="contactFooter col-sm-12 col-lg-4">
+    <section class="pie">
+        <section class="contactFooter">
 
-          <h2>Contacto</h2>
+            <h2>Contacto</h2>
 
-          <div class="contactIcon">
-            <img src="./imagenes-generales/phone.png" alt="Telefono" class="icon">
-            <a href="tel:541126655618">+54 11 26655618</a>
-          </div>
-          <div class="contactIcon">
-
-            <img src="./imagenes-generales/at.png" alt="e-mail" class="icon">
-            <a href="mailto:hstreetworkout@gmail.com">hstreetworkout@gmail.com</a>
-          </div>
-          <div class="contactIcon">
-            <img src="./imagenes-generales/instagram.png" alt="Instagram" class="icon">
-            <a href="https://www.instagram.com/herculesstreetworkout/" target="_blank">@herculesstreetworkout</a>
-          </div>
-          <div class="contactIcon">
-            <img src="./imagenes-generales/youtube.png" alt="Youtube" class="icon">
-            <a href="https://www.youtube.com/channel/UCOxGjiao2Ksj9eGB96kB6GQ">Hercules Street Workout</a>
-
-          </div>
-          <div class="contactIcon">
-
-            <img src="./imagenes-generales/map.png" alt="Ubicacion" class="icon">
-            <a href="https://goo.gl/maps/aqX56tGZdHCzyYjn6" target="_blank">Av. La Plata 264</a>
-          </div>
-          <div class="contactIcon">
-            <img src="./imagenes-generales/clock.png" alt="Reloj" class="icon">
-            <p>Lun. a Vie. 8hs a 22hs/ Sab. 10hs a 16hs</p>
-
-          </div>
-
-        </div>
-
-        <div class="botonTop col-sm-12 col-lg-4">
-          <a href="#top">Volver Arriba</a>
-
-        </div>
-
-        <div class="newsletter col-sm-12 col-lg-4">
-
-          <h2>NewsLetter</h2>
-          <p>¡Suscribite para estar al tanto de las novedades, ofertas, promociones, descuentos y mucho mas!</p>
-          <form class="emailFooter">
-            <div class="input">
-              <label for="email" id="lemailFooter">E-mail</label>
-              <input type="email" id="email">
+            <div class="contactIcon">
+                <img src="./imagenes-generales/phone.png" alt="Telefono" class="icon">
+                <a href="tel:541126655618">+54 11 26655618</a>
             </div>
-            <div>
-              <input type="submit" value="Suscribirse">
+            <div class="contactIcon">
+
+                <img src="./imagenes-generales/at.png" alt="e-mail" class="icon">
+                <a href="mailto:hstreetworkout@gmail.com">hstreetworkout@gmail.com</a>
             </div>
-          </form>
-        </div>
-      </div>  
+            <div class="contactIcon">
+                <img src="./imagenes-generales/instagram.png" alt="Instagram" class="icon">
+                <a href="https://www.instagram.com/herculesstreetworkout/"
+                    target="_blank">@herculesstreetworkout</a>
+            </div>
+            <div class="contactIcon">
+                <img src="./imagenes-generales/youtube.png" alt="Youtube" class="icon">
+                <a href="https://www.youtube.com/channel/UCOxGjiao2Ksj9eGB96kB6GQ">Hercules Street Workout</a>
+
+            </div>
+            <div class="contactIcon">
+
+                <img src="./imagenes-generales/map.png" alt="Ubicacion" class="icon">
+                <a href="https://goo.gl/maps/aqX56tGZdHCzyYjn6" target="_blank">Av. La Plata 264</a>
+            </div>
+            <div class="contactIcon">
+                <img src="./imagenes-generales/clock.png" alt="Reloj" class="icon">
+                <p>Lun. a Vie. 8hs a 22hs/ Sab. 10hs a 16hs</p>
+
+            </div>
+
+        </section>.
+
+        <section class="vermas volverArriba">
+            <a href="#top">Volver Arriba</a>
+
+        </section>
+
+        <section class="newsletter">
+
+            <h2>NewsLetter</h2>
+            <p>¡Suscribite para estar al tanto de las novedades, ofertas, promociones, descuentos y mucho mas!</p>
+            <form class="emailFooter">
+                <div class="input">
+                    <label for="email" id="lemailFooter">E-mail</label>
+                    <input type="email" id="email">
+                </div>
+                <div>
+                    <input type="submit" value="Suscribirse">
+                </div>
+            </form>
+        </section>
+
+  
 
     </section>
-  </footer>
+</footer>
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">

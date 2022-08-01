@@ -1,0 +1,51 @@
+/* Boton Grande */
+
+.boton{
+    margin: 8% auto;
+    background-color: $color-primario;
+    width: fit-content;
+    border: solid 0.5vh $color-secundario;
+    border-radius: 1vh;
+    padding: 1%;
+    transition: background-color 1s;
+    &:hover{
+        background-color: $color-fondobotones;
+        a{
+            color: $color-secundario;
+        }
+    }
+    a{
+        color: $color-textos;
+        text-decoration: none;
+        font-weight: 500;
+        font-size:map-get($tamaños, "tamaño-titulospaginas"); 
+        font-family: $fuente-principal; 
+
+    }
+}
+
+/* Boton Pequeño */
+
+.vermas{
+    margin: 60px auto;
+    background-color: $color-primario;
+    width: fit-content;
+    height: fit-content;
+    border: solid 0.5vh $color-secundario;
+    border-radius: 6px;
+    padding: 0.5vw;
+    transition: background-color 1s;
+    &:hover{
+        background-color: $color-fondobotones;
+        a{
+            color: $color-secundario;
+        }
+    }
+    a{
+        color: $color-textos;
+        font-family: $fuente-principal;
+        text-decoration: none;
+        font-weight: 500;
+        font-size:map-get($tamaños, "tamaño-parrafos");  
+    }
+}
