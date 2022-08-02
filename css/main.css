@@ -527,6 +527,12 @@ footer {
         .contenedorProductos .subcontenedorProductos .carritoComprar a:hover {
           color: aliceblue; }
 
+.carousel-item img {
+  width: 100%; }
+
+.carousel-item .carousel-caption h5 {
+  margin-top: 100px; }
+
 @media screen and (max-width: 1200px) {
   .contenedorProductos {
     display: none; }
