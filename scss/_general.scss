@@ -23,7 +23,7 @@ li{
 .navbar-dark .navbar-nav .nav-link {
     color: $color-primario;
     font-family: $fuente-principal;
-    font-size: 2vh;  
+    font-size: map-get($tamaños, "tamaño-parrafos");  
 }
 .navbar-dark .navbar-nav .nav-link::after {
     content: '';
@@ -38,6 +38,11 @@ li{
 }
 .logo{
     height: 100px;
+    a{
+        img{
+            height:100%;
+        }
+    }
 }
 @include mediaQuery('large'){
     .logo{
@@ -74,6 +79,8 @@ footer{
         justify-content: space-between;
         width: 95%;
         margin: auto;
+        padding-top: 10px;
+ 
         .contactFooter{
             display: block;
             width: fit-content;
@@ -187,6 +194,9 @@ footer{
     @include mediaQuery('large'){
         .pie{
             flex-direction: column;
+            .newsletter{
+                width: fit-content;}
+
         }
     }
 }

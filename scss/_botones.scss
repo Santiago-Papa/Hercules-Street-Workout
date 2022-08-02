@@ -18,7 +18,7 @@
         color: $color-textos;
         text-decoration: none;
         font-weight: 500;
-        font-size:map-get($tamaños, "tamaño-titulospaginas"); 
+        font-size:map-get($tamaños, "tamaño-titulos"); 
         font-family: $fuente-principal; 
 
     }
