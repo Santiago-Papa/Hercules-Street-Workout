@@ -16,8 +16,10 @@
     margin-right: 2.5%;
     .subcontenedorProductos{
         margin-top: 3%;
-        width: 16%;
+        width: 16vw;
+       
         margin: 0 20px;
+        
         *{
             transition: 400ms;
         }
@@ -46,11 +48,14 @@
             margin-left: 5%;
             margin-top: 20px;
             display:flex;
+            flex-wrap: wrap;
             justify-content: space-between;
+            align-self: auto;
+
             a{
                 color: $color-primario;
                 font-family: $fuente-principal;
-                font-size: map-get($tamaños, "tamaño-parrafos");
+                font-size: map-get($tamaños, "tamaño-fuentescontacto");
                 &:hover{
                     color: $color-textos;
                 }
@@ -82,11 +87,5 @@
     }
 }
 
-.carousel-item{
-    div{
-        .labelsSuplementos{
-            color: $color-secundario;
-        }
-    }
-}
+
 

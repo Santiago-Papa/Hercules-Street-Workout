@@ -1,13 +1,14 @@
 /* Boton Grande */
 
 .boton{
-    margin: 8% auto;
+    margin: 60px auto;
     background-color: $color-primario;
     width: fit-content;
+    height: fit-content;
     border: solid 0.5vh $color-secundario;
-    border-radius: 1vh;
-    padding: 1%;
-    transition: background-color 1s;
+    border-radius: 6px;
+    padding: 0.5vw;
+
     &:hover{
         background-color: $color-fondobotones;
         a{

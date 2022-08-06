@@ -33,9 +33,11 @@
             }
         }
         .formContacto{
+            
             .nombreContacto{
                 display: inline-block;
                 input{
+                    color: $color-terciario;
                     padding: 10px;
                     border: none;
                     border-radius: 4px;
@@ -47,6 +49,7 @@
             .emailContacto{
                 display: inline-block;
                 input{
+                    color: $color-terciario;
                     padding: 10px;
                     border: none;
                     border-radius: 4px;
@@ -58,6 +61,7 @@
             .mensajeContacto{
                 margin-top: 3%;
                 textarea{
+                    color: $color-terciario;
                     padding: 10px;
                     border: none;
                     border-radius: 4px;

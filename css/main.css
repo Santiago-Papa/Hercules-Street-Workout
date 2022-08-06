@@ -125,6 +125,7 @@ footer {
             transition: transform .25s;
             color: aliceblue; }
           footer .pie .newsletter form div input {
+            color: aliceblue;
             padding: 10px;
             border: none;
             border-radius: 4px;
@@ -216,13 +217,13 @@ footer {
 
 /* Boton Grande */
 .boton {
-  margin: 8% auto;
+  margin: 60px auto;
   background-color: #519749;
   width: fit-content;
+  height: fit-content;
   border: solid 0.5vh #0C0C0C;
-  border-radius: 1vh;
-  padding: 1%;
-  transition: background-color 1s; }
+  border-radius: 6px;
+  padding: 0.5vw; }
   .boton:hover {
     background-color: #C3C3C1; }
     .boton:hover a {
@@ -387,7 +388,8 @@ footer {
   width: 95%;
   margin-top: 2%;
   margin-left: 2.5%;
-  margin-right: 2.5%; }
+  margin-right: 2.5%;
+  margin-bottom: 2.5%; }
   .seccionesTienda h2 {
     color: aliceblue;
     font-family: "Roboto", sans-serif;
@@ -426,6 +428,7 @@ footer {
     .seccion1Contacto .row .formContacto .nombreContacto {
       display: inline-block; }
       .seccion1Contacto .row .formContacto .nombreContacto input {
+        color: aliceblue;
         padding: 10px;
         border: none;
         border-radius: 4px;
@@ -435,6 +438,7 @@ footer {
     .seccion1Contacto .row .formContacto .emailContacto {
       display: inline-block; }
       .seccion1Contacto .row .formContacto .emailContacto input {
+        color: aliceblue;
         padding: 10px;
         border: none;
         border-radius: 4px;
@@ -444,6 +448,7 @@ footer {
     .seccion1Contacto .row .formContacto .mensajeContacto {
       margin-top: 3%; }
       .seccion1Contacto .row .formContacto .mensajeContacto textarea {
+        color: aliceblue;
         padding: 10px;
         border: none;
         border-radius: 4px;
@@ -497,7 +502,7 @@ footer {
   margin-right: 2.5%; }
   .contenedorProductos .subcontenedorProductos {
     margin-top: 3%;
-    width: 16%;
+    width: 16vw;
     margin: 0 20px; }
     .contenedorProductos .subcontenedorProductos * {
       transition: 400ms; }
@@ -519,11 +524,13 @@ footer {
       margin-left: 5%;
       margin-top: 20px;
       display: flex;
-      justify-content: space-between; }
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-self: auto; }
       .contenedorProductos .subcontenedorProductos .carritoComprar a {
         color: #519749;
         font-family: "Poppins", sans-serif;
-        font-size: calc(1rem + 0.32vw); }
+        font-size: calc(1rem+0.2vw); }
         .contenedorProductos .subcontenedorProductos .carritoComprar a:hover {
           color: aliceblue; }
 
@@ -538,6 +545,3 @@ footer {
     display: none; }
   .carousel {
     display: block; } }
-
-.carousel-item div .labelsSuplementos {
-  color: #0C0C0C; }
