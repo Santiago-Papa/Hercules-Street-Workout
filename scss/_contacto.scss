@@ -68,6 +68,8 @@
                     font: inherit;
                     background-color: transparent;
                     outline: 2px solid $color-textos;
+                    width: 64%;
+                    height: fit-content;
                 }
             }
             input[type =submit]{

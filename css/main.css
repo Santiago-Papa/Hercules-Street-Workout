@@ -454,7 +454,9 @@ footer {
         border-radius: 4px;
         font: inherit;
         background-color: transparent;
-        outline: 2px solid aliceblue; }
+        outline: 2px solid aliceblue;
+        width: 64%;
+        height: fit-content; }
     .seccion1Contacto .row .formContacto input[type=submit] {
       background-color: transparent;
       border: solid aliceblue;
@@ -492,12 +494,11 @@ footer {
   display: none; }
 
 .contenedorProductos {
-  margin-top: 3.5%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 95%;
-  margin-top: 2%;
+  margin-top: 3.5%;
   margin-left: 2.5%;
   margin-right: 2.5%; }
   .contenedorProductos .subcontenedorProductos {
